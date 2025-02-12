@@ -128,10 +128,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\SweetContext.cs" />
+    <Compile Include="Controllers\AdminCategoryController.cs" />
     <Compile Include="Controllers\AdminLayoutController.cs" />
     <Compile Include="Controllers\AdminProductController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\ErrorPagesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Entities\About.cs" />
     <Compile Include="Entities\Category.cs" />
@@ -147,6 +150,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="colorlib-error-404-7\css\style.css" />
+    <Content Include="colorlib-error-404-7\index.html" />
+    <Content Include="colorlib-error-404-7\readme.txt" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -370,6 +376,11 @@
     <Content Include="Views\AdminLayout\Index.cshtml" />
     <Content Include="Views\AdminProduct\ProductList.cshtml" />
     <Content Include="Views\AdminProduct\CreateProduct.cshtml" />
+    <Content Include="Views\AdminProduct\UpdateProduct.cshtml" />
+    <Content Include="Views\ErrorPages\Page404.cshtml" />
+    <Content Include="Views\AdminLayout\PartialSidebar.cshtml" />
+    <Content Include="Views\AdminCategory\CategoryList.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
