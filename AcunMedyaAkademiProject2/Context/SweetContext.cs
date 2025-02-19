@@ -18,5 +18,6 @@ namespace AcunMedyaAkademiProject2.Context
         public DbSet<Service> Services { get; set; }
         public DbSet<Slider>  Sliders { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<Admin> Admins { get; set; }
     }
 }

@@ -18,5 +18,6 @@ namespace AcunMedyaAkademiProject2.Controllers
             var values = context.Products.ToList();
             return View(values);
         }
+
     }
 }

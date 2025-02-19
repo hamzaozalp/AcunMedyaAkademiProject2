@@ -20,6 +20,13 @@ namespace AcunMedyaAkademiProject2.Controllers
         [HttpGet]
         public ActionResult CreateProduct()
         {
+            List<SelectListItem> categories=(from x in context.Categories.ToList()
+                                             select new SelectListItem
+                                             {
+                                                 Text = x.CategoryName,
+                                                 Value = x.CategoryId.ToString()
+                                             }).ToList();
+            ViewBag.v = categories;
             return View();
         }
 
